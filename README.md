@@ -67,10 +67,33 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
+ Developed by:
+ Register number:
+ ```
+int potpin= A5;
+int ledpin= 2;
+
+void setup()
+{
+ pinMode (potpin, INPUT);
+ pinMode(ledpin, OUTPUT);
+ Serial.begin(9600);
+}
+
+void loop()
+{
+ int PotMeasure = analogRead(A5);
+ if (PotMeasure>=450)
+ {
+   digitalWrite(2, HIGH);
+ }
+ else
+   digitalWrite(2, LOW);
  
+}
 
 
-
+```
 
 
 
@@ -82,7 +105,7 @@ CIRCUIT DIAGRAM
 **
 
 
-[My image](username.github.com/repository/img/image.jpg)
+![My image](robo2.png)
 
 
 
@@ -90,4 +113,5 @@ CIRCUIT DIAGRAM
 
 
 
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+##RESULT:
+ Arduino uno analog input functioning is learned and interfaced with digital input switch .
